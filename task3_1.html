@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Basic HTML Form Elements</h1>
+    <form>
+        <h3>Personal information</h3>
+        <div>
+            <label for="name">Name(text)</label>
+        <input type="text" name="name" id="name" placeholder="username">
+        </div>
+        <h3>Contact & security</h3>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" required> 
+        </div>
+         <div>
+            <label for="Pass">password</label>
+            <input type="password" name="password" id="Pass" placeholder="password" required> 
+        </div>
+        <br>
+         <div>
+            <label >Favourite colour </label>
+            <input type="color" > 
+        </div>
+         
+         <div>
+            <label >Range(from 0 to 100) </label>
+            <input type="range"min="0" max="100" step="10" > 
+        </div>
+        
+        <h4>Select your Favourite pet</h4>
+        <div>
+            <input type="radio" name="pet" value="Dog" id="d">
+            <label for="d">DOG</label> 
+        </div>
+         <div>
+            <input type="radio" name="pet" value="cat" id="c">
+            <label for="c">Cat</label> 
+        </div>
+         <div>
+            <input type="radio" name="pet" value="bird" id="b">
+            <label for="b">Bird</label> 
+        </div>
+        <hr>
+          <h4>interests</h4>
+         <div>
+            <input type="checkbox" name="interest" value="coding" id="co">
+            <label for="co">coding</label> 
+        </div>
+         <div>
+            <input type="checkbox" name="interest" value="music" id="m">
+            <label for="m">Music</label> 
+        </div>
+         <div>
+            <input type="checkbox" name="interest" value="travel" id="t">
+            <label for="t">Travel</label> 
+        </div>
+        <label for="country">choose your country</label>
+        <select name="country" id="country">
+            <option value="1"> egypt</option>
+            <option value="2"> sodan</option>
+            <option value="3"> Qatar</option>
+            <option value="4"> jordan</option>
+            <option value="5"> syria</option>
+            <option value="6"> iraq</option>
+            <option value="7"> yemen</option>
+            <option value="8"> omen</option>
+            </select>
+            <br>
+            <hr>
+            <textarea cols="30" rows="5">Your comment</textarea>
+            <hr>
+            <div>
+                <label>Upload afile</label>
+                <input type="file">
+            </div>
+            <hr>
+            <label>Search this site </label>
+            <input type="search">
+            <br>
+            <label>your website Url</label>
+            <input type="url">
+            <hr>
+            <label>Date:</label>
+            <input type="date">
+            <br>
+            <label>Month:</label>
+            <input type="month">
+            <br>
+            <label>Time:</label>
+            <input type="time">
+            <hr>
+            <div>
+            <label>choose a browser (with suddestion)</label>
+            <input list="browser" name="browser">
+            <datalist id="browser">
+                <option value="Google chrome">
+                <option value="Microsoft edge">
+            </datalist>
+            </div>
+            <input type="submit" value="submit form">
+            <input type="reset" value="Clear Form">
+            
+            
+
+    </form>
+</body>
+</html>
